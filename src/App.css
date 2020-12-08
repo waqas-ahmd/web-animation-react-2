@@ -1,38 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Shadows+Into+Light&display=swap");
+body {
+  background-color: #141414;
+}
 .App {
+  background: radial-gradient(rgb(255, 255, 255), rgb(201, 201, 201));
   text-align: center;
+  height: calc(100vh - 20px);
+  width: calc(100vw - 20px);
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.AppTitle {
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: xx-large;
+  font-weight: 500;
+  letter-spacing: 3px;
+  background-color: white;
+  padding: 3px;
+  width: 90%;
+  border-radius: 5px;
+  color: rgb(0, 0, 78);
+  font-family: "Bebas Neue", cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.NextButton button {
+  background-color: blueviolet;
   color: white;
+  padding: 10px;
+  border: none;
+  transition: all 300ms ease;
+  position: absolute;
+  width: 100px;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  font-size: large;
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+.NextButton button:hover {
+  box-shadow: 0px 0px 6px black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.AnimalDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.AnimalName {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(43, 43, 43);
+  font-size: xx-large;
+  font-weight: 500;
+  letter-spacing: 3px;
+  transition: all 2s ease;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.animal {
+  width: 300px;
+  max-height: 300px;
+  transition: all 2s ease;
+}
+
+.animal0 {
+  opacity: 0;
+  transform: scaleX(2) scaleY(1.5);
+}
+
+.animal1 {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.animal polygon {
+  transform-origin: center;
+  transform-box: fill-box;
+  transition: all 1200ms ease;
+}
+
+.block0 {
+  fill: rgb(255, 255, 255) !important;
+  transform: scale(0) rotateZ(-180deg);
+}
+
+.block1 {
+  transform: scale(1) rotateZ(0deg);
+}
+
+.fox-cls-1 {
+  fill: #9b320e;
+  stroke: #9b320e;
+}
+
+.fox-cls-2 {
+  fill: #eabfac;
+  stroke: #eabfac;
+}
+
+.fox-cls-3 {
+  fill: #ffa300;
+  stroke: #ffa300;
+}
+
+.fox-cls-4 {
+  fill: #d6460d;
+  stroke: #d6460d;
+}
+
+.fox-cls-5 {
+  fill: #ff4e00;
+  stroke: #ff4e00;
+}
+
+.fox-cls-6 {
+  fill: #161616;
+  stroke: #161616;
+}
+
+.fox-cls-7 {
+  fill: #ff7300;
+  stroke: #ff7300;
+}
+
+.fox-cls-8 {
+  fill: #ce1b1b;
+  stroke: #ce1b1b;
+}
+
+.fox-cls-9 {
+  fill: #bcbcbc;
+  stroke: #bcbcbc;
+}
+
+.bear-cls-2 {
+  fill: #60353c;
+  stroke: #60353c;
+}
+
+.bear-cls-3 {
+  fill: #914e5a;
+  stroke: #914e5a;
+}
+
+.bear-cls-4 {
+  fill: #7c4249;
+  stroke: #7c4249;
+}
+
+.bear-cls-5 {
+  fill: #141414;
+  stroke: #141414;
+}
+
+.deer-cls-1 {
+  fill: #e5731f;
+  stroke: #e5731f;
+}
+
+.deer-cls-2 {
+  fill: #c45d18;
+  stroke: #c45d18;
+}
+
+.deer-cls-3 {
+  fill: #ecb135;
+  stroke: #ecb135;
+}
+
+.deer-cls-4 {
+  fill: #e78e24;
+  stroke: #e78e24;
+}
+
+.deer-cls-5 {
+  fill: #aa5217;
+  stroke: #aa5217;
+}
+
+.deer-cls-6 {
+  fill: #493b3b;
+  stroke: #493b3b;
+}
+
+.deer-cls-7 {
+  fill: #5b3605;
+  stroke: #5b3605;
+}
+
+.deer-cls-8 {
+  fill: #111;
+  stroke: #111;
 }
